@@ -1,14 +1,40 @@
 # TypeScript Node Starter with Mongoose Restify
 
-Add Mongoose Restify API provider at [Microsoft/Typescript-Node-Starter](https://github.com/Microsoft/TypeScript-Node-Starter)
+Enable REST API service simply.
+Adding Mongoose Restify API provider at [Microsoft/Typescript-Node-Starter](https://github.com/Microsoft/TypeScript-Node-Starter)
 
 # Motivation
+
+Providing REST API is mandatory feature in modern service.
+When work with Node.js Express Developer have to writes Data Model, Express Router and Controllers. Data Model changes always then sync with every related objects. It`s not easy part and raise SW costs.
 
 > There are a few reasons to choose Restify and Mongo. In essence, we’re avoiding potential pitfalls with picking the “shiny new thing” and focussing on the most important factors when it comes to building a REST API: developer experience, performance (and the software -ilities), along with support and availability of knowledge/experience within the JavaScript community. from [In Depth Guide on Building a REST API with Node.js, Restify & MongoDB](https://getstream.io/blog/building-rest-api-node-js-restify-mongodb/).
 
 This project trying to suggest REST API by Minimum configuration as possible.
 
 use [express-restify-mongoose](https://florianholzapfel.github.io/express-restify-mongoose/)
+
+# Key parts enable REST API
+
+package dependencies
+```
+package.json
+- express-restify-mongoose
+```
+
+mapping restify in express app
+```
+src/app.ts
+src/routes/*.ts
+```
+
+Mongoose Models
+```
+under src/models/mongoose
+- todo.ts
+- contact.ts
+- location.ts
+```
 
 # Todos
 
