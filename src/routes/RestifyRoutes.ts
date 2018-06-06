@@ -1,6 +1,8 @@
 import * as express from "express";
 import methodOverride from "method-override";
 import * as restify from "express-restify-mongoose";
+import * as models from "../models/mongoose";
+
 
 
 const restifyOptions = {
@@ -21,7 +23,9 @@ export class RestifyRoutes {
         /**
          * Add mongoose schema models
          */
-        // restify.serve(router, model, restifyOptions);
+        restify.serve(router, models.TodoModel, restifyOptions);
+        restify.serve(router, models.ContactModel, restifyOptions);
+        restify.serve(router, models.LocationModel, restifyOptions);
 
         app.use(router);
     }

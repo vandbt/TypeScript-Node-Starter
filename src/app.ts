@@ -17,10 +17,10 @@ import { MONGODB_URI, SESSION_SECRET } from "./util/secrets";
 const MongoStore = mongo(session);
 
 // Load environment variables from .env file, where API keys and passwords are configured
-dotenv.config({ path: ".env.example" });
+// dotenv.config({ path: ".env.example" });
 
 // Load production environment variables
-// dotenv.config({ path: ".env" });
+dotenv.config({ path: ".env" });
 
 // Controllers (route handlers)
 import * as homeController from "./controllers/home";
