@@ -7,3 +7,10 @@ describe("GET /api", () => {
       .expect(200);
   });
 });
+
+describe("GET /version", () => {
+  it("should return 200 OK", () => {
+    return request(app).get("/version")
+      .expect(200);
+  });
+});

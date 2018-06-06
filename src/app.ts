@@ -19,12 +19,17 @@ const MongoStore = mongo(session);
 // Load environment variables from .env file, where API keys and passwords are configured
 dotenv.config({ path: ".env.example" });
 
+// Load production environment variables
+// dotenv.config({ path: ".env" });
+
 // Controllers (route handlers)
 import * as homeController from "./controllers/home";
 import * as userController from "./controllers/user";
 import * as apiController from "./controllers/api";
 import * as contactController from "./controllers/contact";
 
+// graphql configuration
+import { DefaultRoutes, RestifyRoutes } from "./routes";
 
 // API keys and Passport configuration
 import * as passportConfig from "./config/passport";
@@ -121,5 +126,12 @@ app.get("/auth/facebook", passport.authenticate("facebook", { scope: ["email", "
 app.get("/auth/facebook/callback", passport.authenticate("facebook", { failureRedirect: "/login" }), (req, res) => {
   res.redirect(req.session.returnTo || "/");
 });
+
+/**
+ * Map Restify API Routes
+ */
+const router = express.Router();
+DefaultRoutes.map(app); // Map routes to the express application
+RestifyRoutes.map(app, router); // Map RestifyRoutes
 
 export default app;
