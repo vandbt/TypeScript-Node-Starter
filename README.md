@@ -1,4 +1,17 @@
-# TypeScript Node Starter
+# TypeScript Node Starter with Mongoose Restify
+
+Add Mongoose Restify API provider at [Microsoft/Typescript-Node-Starter](https://github.com/Microsoft/TypeScript-Node-Starter)
+
+# Motivation
+
+> There are a few reasons to choose Restify and Mongo. In essence, we’re avoiding potential pitfalls with picking the “shiny new thing” and focussing on the most important factors when it comes to building a REST API: developer experience, performance (and the software -ilities), along with support and availability of knowledge/experience within the JavaScript community. from [In Depth Guide on Building a REST API with Node.js, Restify & MongoDB](https://getstream.io/blog/building-rest-api-node-js-restify-mongodb/).
+
+This project trying to suggest REST API by Simple configuration as possible.
+
+# Todos
+
+- [ ] Add Mongoose Restify for provide REST API.
+- [ ] Integrates Access Control at REST API.
 
 [![Dependency Status](https://david-dm.org/Microsoft/TypeScript-Node-Starter.svg)](https://david-dm.org/Microsoft/TypeScript-Node-Starter) [![Build Status](https://travis-ci.org/Microsoft/TypeScript-Node-Starter.svg?branch=master)](https://travis-ci.org/Microsoft/TypeScript-Node-Starter) 
 
