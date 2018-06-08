@@ -1,10 +1,13 @@
 {
-  "name": "express-typescript-starter",
+  "name": "express-typescript-starter-with-restify",
   "version": "0.1.0",
-  "description": "A starting point for Node.js express apps with TypeScript",
+  "description": "A enable simple REST API using Restify for Node.js express apps with TypeScript",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Microsoft/TypeScript-Node-Starter"
+    "url": "https://github.com/vandbt/TypeScript-Node-Starter-with-Restify"
+  },
+  "bugs": {
+    "url": "https://github.com/vandbt/TypeScript-Node-Starter-with-Restify/issues"
   },
   "author": "SC Jeong, Bowden Kelly",
   "license": "MIT",
